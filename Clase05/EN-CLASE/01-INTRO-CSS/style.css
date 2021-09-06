@@ -1,0 +1,54 @@
+/* asterisco nos sirve para hacer rest de nivel mas bajo */
+/* Es el elemento de nivel mas bajo (0,0,0) */
+* {
+   background-color: rgb(231, 216, 231);
+}
+
+/* Estiladno usando la etiqueta */
+/* las etiquetas tienen especificidad (0,0,1) */
+h1 {
+    color: rgb(90, 16, 16);
+    font-size: 72px;
+    background-color: salmon;
+}
+/* poniendo un estilo a etiqueta que se repite varias veces*/
+div {
+    background-color: silver;
+    margin-top: 5%;
+}
+/* las class son las siguientes en especificidad (0,1,0) */
+.divDistinto {
+    background-color: springgreen;
+}
+
+/* los id tienen especificidad (1,0,0) */
+#textoLorem {
+    color: white;
+}
+
+/* los id + etiquetas hija tienen especificidad (1, 0, 1)  */
+#textoLorem span {
+    color: palevioletred;
+    background-color: papayawhip;
+    cursor: pointer;
+}
+
+/* podemos combinar! ahoara es (0, 2, 1)*/
+p.textoLorem.texto2 {
+    color: rgb(0, 110, 255);
+}
+/* podemos combinar! ahoara es (0, 1, 1)*/
+p.textoLorem {
+    color: yellow;
+}
+
+/* important pasa por encima de todo! ahora es (1,0,1,0) */
+.noHaganEsto {
+    color: rebeccapurple!important;
+}
+
+/* podemos combinar las etiquetas, suma las especificidades mas bajas (0, 0 ,2) */
+ul li {
+    list-style-type: square;
+    color: salmon;
+}

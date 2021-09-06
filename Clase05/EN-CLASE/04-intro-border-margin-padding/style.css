@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(233, 243, 233);
+    margin: 0;
+}
+
+div {
+    background-color: turquoise;
+    /* arriba,der,abj,izq */
+    margin: 4% 25% 3% 10%;
+    padding: 5%;
+    /* border  radius va con pixeles */
+    border-radius: 10px;
+  }
+  /* el orden en CSS no afecta a los estilos, excepto que tengan el mismo valor de especificidad  */
+    div p {
+        color: yellow;
+    }
+
+    p {
+        color: navy;
+    }
+    .lorem {
+        color: peru;
+    }
